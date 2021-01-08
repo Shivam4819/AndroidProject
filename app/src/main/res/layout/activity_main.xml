@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="your value is " />
+
+    <EditText
+        android:id="@+id/editbox1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginBottom="-50dp"
+        android:hint="Enter first value" />
+
+    <EditText
+        android:id="@+id/editbox2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/editbox1"
+        android:layout_marginBottom="-50dp"
+        android:hint="Enter second value" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editbox2"
+        android:layout_marginBottom="-82dp"
+        android:text="add"/>
+
+    <Button
+        android:id="@+id/subButton"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editbox2"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="-82dp"
+        android:layout_toEndOf="@+id/addButton"
+        android:text="sub" />
+
+    <Button
+        android:id="@+id/mulButton"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_marginBottom="-82dp"
+        android:text="mul"/>
+
+    <Button
+        android:id="@+id/divButton"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/subButton"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="-82dp"
+        android:layout_toEndOf="@+id/addButton"
+        android:text="div" />
+</RelativeLayout>
